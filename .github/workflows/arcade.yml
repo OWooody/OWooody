@@ -16,6 +16,11 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           games: "pacman"
+      - uses: actions/checkout@v4
+        with:
+          path: repo
+      - name: Recolor eaten cells instead of clearing them
+        run: sudo perl repo/scripts/recolor-eaten.pl dist/pacman-contribution-graph.svg dist/pacman-contribution-graph-dark.svg
       - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output

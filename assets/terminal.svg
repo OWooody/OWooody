@@ -1,35 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="260" viewBox="0 0 840 260">
-  <style>.m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14px}</style>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="254" viewBox="0 0 840 254">
+  <style>.m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}</style>
   <defs>
-    <clipPath id="tc1"><rect x="20" y="50" height="24" width="0">
-      <animate attributeName="width" dur="10s" repeatCount="indefinite" values="0;0;120;120;0" keyTimes="0;0.02;0.08;0.97;1"/>
-    </rect></clipPath>
-    <clipPath id="tc2"><rect x="20" y="112" height="24" width="0">
-      <animate attributeName="width" dur="10s" repeatCount="indefinite" values="0;0;160;160;0" keyTimes="0;0.2;0.28;0.97;1"/>
-    </rect></clipPath>
+    <clipPath id="tc0"><rect x="20" y="50" height="24" width="0"><animate attributeName="width" dur="12s" repeatCount="indefinite" values="0;0;113;113;0" keyTimes="0;0.030;0.090;0.97;1"/></rect></clipPath>
+    <clipPath id="tc4"><rect x="20" y="164" height="24" width="0"><animate attributeName="width" dur="12s" repeatCount="indefinite" values="0;0;139;139;0" keyTimes="0;0.280;0.340;0.97;1"/></rect></clipPath>
   </defs>
-  <rect x="1" y="1" width="838" height="258" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <rect x="1" y="1" width="838" height="252" rx="12" fill="#0d1117" stroke="#30363d"/>
   <circle cx="24" cy="22" r="5" fill="#30363d"/><circle cx="42" cy="22" r="5" fill="#30363d"/><circle cx="60" cy="22" r="5" fill="#30363d"/>
-  <text x="420" y="26" class="m" font-size="12" fill="#6e7681" text-anchor="middle" style="font-size:12px">osama@github: ~</text>
+  <text x="420" y="26" class="m" font-size="12" fill="#6e7681" text-anchor="middle">osama@github: ~</text>
   <line x1="1" y1="40" x2="839" y2="40" stroke="#21262d"/>
-
-  <text x="28" y="68" class="m" clip-path="url(#tc1)"><tspan fill="#58a6ff">$</tspan><tspan fill="#e6edf3"> whoami</tspan></text>
-  <text x="28" y="94" class="m" fill="#8b949e" opacity="0">osama alnajjar &#8212; builds AI agents that turn requests into pull requests
-    <animate attributeName="opacity" dur="10s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.11;0.12;0.97;1"/>
-  </text>
-
-  <text x="28" y="130" class="m" clip-path="url(#tc2)"><tspan fill="#58a6ff">$</tspan><tspan fill="#e6edf3"> snag status</tspan></text>
-  <text x="28" y="156" class="m" fill="#8b949e" opacity="0">[1/3] request received    "move this button"  (from: in-app tap)
-    <animate attributeName="opacity" dur="10s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.33;0.34;0.97;1"/>
-  </text>
-  <text x="28" y="182" class="m" fill="#8b949e" opacity="0">[2/3] agent coding        branch snag/fix-cta
-    <animate attributeName="opacity" dur="10s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.46;0.47;0.97;1"/>
-  </text>
-  <text x="28" y="208" class="m" fill="#3fb950" opacity="0">[3/3] PR #128 merged      shipped in 4m 12s
-    <animate attributeName="opacity" dur="10s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.6;0.61;0.97;1"/>
-  </text>
-
-  <rect x="28" y="222" width="9" height="16" fill="#58a6ff">
-    <animate attributeName="opacity" dur="1s" repeatCount="indefinite" values="1;1;0;0" keyTimes="0;0.5;0.5;1"/>
-  </rect>
+  <text x="28" y="68" class="m" font-size="14" clip-path="url(#tc0)"><tspan fill="#58a6ff">$</tspan><tspan fill="#e6edf3"> cat now.md</tspan></text>
+  <text x="28" y="94" class="m" font-size="14" fill="#8b949e" xml:space="preserve" opacity="0">building    AI agents that turn feedback into shipped code<animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.130;0.140;0.97;1"/></text>
+  <text x="28" y="120" class="m" font-size="14" fill="#8b949e" xml:space="preserve" opacity="0">connecting  AI assistants to real business tools over MCP<animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.180;0.190;0.97;1"/></text>
+  <text x="28" y="146" class="m" font-size="14" fill="#8b949e" xml:space="preserve" opacity="0">sharing     templates that get new apps running in minutes<animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.230;0.240;0.97;1"/></text>
+  <text x="28" y="182" class="m" font-size="14" clip-path="url(#tc4)"><tspan fill="#58a6ff">$</tspan><tspan fill="#e6edf3"> cat stack.txt</tspan></text>
+  <text x="28" y="208" class="m" font-size="14" fill="#3fb950" xml:space="preserve" opacity="0">TypeScript  Swift  React  Supabase  Python<animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.380;0.390;0.97;1"/></text>
+  <rect x="28" y="218" width="9" height="16" fill="#58a6ff"><animate attributeName="opacity" dur="1s" repeatCount="indefinite" values="1;1;0;0" keyTimes="0;0.5;0.5;1"/></rect>
 </svg>

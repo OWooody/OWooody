@@ -17,8 +17,8 @@ jobs:
             dist/github-snake-dark.svg?palette=github-dark
       - name: Recolor eaten cells instead of clearing them
         run: |
-          sed -i 's/%,100%{fill:var(--ce)}/%,100%{fill:var(--cx)}/g; s/:root{/:root{--cx:#58a6ff;/' dist/github-snake-dark.svg
-          sed -i 's/%,100%{fill:var(--ce)}/%,100%{fill:var(--cx)}/g; s/:root{/:root{--cx:#0969da;/' dist/github-snake.svg
+          sudo sed -i 's/%,100%{fill:var(--ce)}/%,100%{fill:var(--cx)}/g; s/:root{/:root{--cx:#58a6ff;/' dist/github-snake-dark.svg
+          sudo sed -i 's/%,100%{fill:var(--ce)}/%,100%{fill:var(--cx)}/g; s/:root{/:root{--cx:#0969da;/' dist/github-snake.svg
       - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output

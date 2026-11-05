@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="280" viewBox="0 0 840 280">
+  <style>.m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}</style>
+  <rect width="840" height="280" rx="16" fill="#0d1117"/>
+
+  <text x="40" y="96" class="m" font-size="30" font-weight="700" fill="#e6edf3">Osama Alnajjar</text>
+  <text x="40" y="130" class="m" font-size="16" fill="#8b949e">I build AI agents that ship code.</text>
+  <text x="40" y="186" class="m" font-size="14" fill="#58a6ff">$ snag --tap-to-fix</text>
+  <text x="40" y="210" class="m" font-size="14" fill="#3fb950">request &#8594; pull request &#8594; merged</text>
+
+  <!-- phone -->
+  <rect x="520" y="28" width="130" height="224" rx="18" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+  <rect x="566" y="38" width="38" height="5" rx="2.5" fill="#30363d"/>
+  <rect x="536" y="60" width="98" height="8" rx="4" fill="#30363d"/>
+  <rect x="536" y="76" width="70" height="8" rx="4" fill="#21262d"/>
+  <rect x="536" y="96" width="98" height="44" rx="8" fill="#21262d"/>
+
+  <!-- the misaligned button that gets fixed -->
+  <rect y="200" width="80" height="26" rx="6" fill="#238636">
+    <animate attributeName="x" dur="7s" repeatCount="indefinite"
+      values="568;568;545;545;568" keyTimes="0;0.6;0.68;0.95;1"/>
+  </rect>
+
+  <!-- tap ripple -->
+  <circle cx="608" cy="213" r="0" fill="none" stroke="#58a6ff" stroke-width="2">
+    <animate attributeName="r" dur="7s" repeatCount="indefinite" values="0;0;26;26" keyTimes="0;0.05;0.2;1"/>
+    <animate attributeName="opacity" dur="7s" repeatCount="indefinite" values="0;0.9;0;0" keyTimes="0;0.05;0.2;1"/>
+  </circle>
+
+  <!-- request bubble -->
+  <g opacity="0">
+    <animate attributeName="opacity" dur="7s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.12;0.18;0.6;0.65;1"/>
+    <rect x="532" y="150" width="106" height="34" rx="8" fill="#1f6feb" fill-opacity="0.18" stroke="#1f6feb"/>
+    <text x="585" y="171" class="m" font-size="10" fill="#c9d1d9" text-anchor="middle">"move this button"</text>
+  </g>
+
+  <!-- connector + PR card -->
+  <g opacity="0">
+    <animate attributeName="opacity" dur="7s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.25;0.32;0.92;1"/>
+    <animateTransform attributeName="transform" type="translate" dur="7s" repeatCount="indefinite"
+      values="12 0;12 0;0 0;0 0" keyTimes="0;0.25;0.32;1"/>
+    <path d="M652 213 C 664 213, 658 140, 670 140" fill="none" stroke="#30363d" stroke-width="2" stroke-dasharray="4 4">
+      <animate attributeName="stroke-dashoffset" from="16" to="0" dur="0.8s" repeatCount="indefinite"/>
+    </path>
+    <rect x="670" y="86" width="150" height="108" rx="10" fill="#161b22" stroke="#30363d"/>
+    <text x="684" y="112" class="m" font-size="13" font-weight="700" fill="#e6edf3">PR #128</text>
+    <text x="684" y="134" class="m" font-size="12" fill="#8b949e">fix: align CTA</text>
+    <text x="684" y="152" class="m" font-size="11" fill="#6e7681">by snag-agent</text>
+    <rect x="684" y="162" width="72" height="20" rx="10">
+      <animate attributeName="fill" dur="7s" repeatCount="indefinite" values="#238636;#238636;#8957e5;#8957e5" keyTimes="0;0.68;0.7;1"/>
+    </rect>
+    <text x="720" y="176" class="m" font-size="11" fill="#ffffff" text-anchor="middle">
+      <tspan>Open<animate attributeName="opacity" dur="7s" repeatCount="indefinite" values="1;1;0;0" keyTimes="0;0.68;0.7;1"/></tspan>
+    </text>
+    <text x="720" y="176" class="m" font-size="11" fill="#ffffff" text-anchor="middle" opacity="0">Merged
+      <animate attributeName="opacity" dur="7s" repeatCount="indefinite" values="0;0;1;1" keyTimes="0;0.68;0.7;1"/>
+    </text>
+  </g>
+</svg>
